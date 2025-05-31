@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  dolar-scraper:
+    build: .
+    container_name: dolar-scraper
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python scripts/dolar_scraper.py
